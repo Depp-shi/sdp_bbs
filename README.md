@@ -6,7 +6,7 @@ mkdir resources/views/shared
 touch resources/views/shared/_messages.blade.php
 mkdir resources/views/pages
 touch resources/views/pages/root.blade.php
-php artisan make:controller PagesController
+php artisan make:controller PagesController  
 composer require laravel/ui:3.4.5 --dev  
 php artisan ui bootstrap  
 npm config set registry=https://registry.npm.taobao.org  
