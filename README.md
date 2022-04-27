@@ -15,3 +15,4 @@ SASS_BINARY_SITE=http://npm.taobao.org/mirrors/node-sass yarn
 yarn add resolve-url-loader@^5.0.0 --dev  
 npm run watch-poll  
 yarn add @fortawesome/fontawesome-free
+composer require "overtrue/laravel-lang:~6.0"  
