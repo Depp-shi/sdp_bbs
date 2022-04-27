@@ -3,9 +3,9 @@ touch resources/views/layouts/app.blade.php
 touch resources/views/layouts/_header.blade.php  
 touch resources/views/layouts/_footer.blade.php  
 mkdir resources/views/shared  
-touch resources/views/shared/_messages.blade.php
-mkdir resources/views/pages
-touch resources/views/pages/root.blade.php
+touch resources/views/shared/_messages.blade.php  
+mkdir resources/views/pages  
+touch resources/views/pages/root.blade.php  
 php artisan make:controller PagesController  
 composer require laravel/ui:3.4.5 --dev  
 php artisan ui bootstrap  
