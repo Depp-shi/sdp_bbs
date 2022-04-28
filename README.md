@@ -16,3 +16,10 @@ yarn add resolve-url-loader@^5.0.0 --dev
 npm run watch-poll  
 yarn add @fortawesome/fontawesome-free
 composer require "overtrue/laravel-lang:~6.0"  
+composer require "mews/captcha:~3.0"  
+php artisan vendor:publish --provider='Mews\Captcha\CaptchaServiceProvider'  
+##缺少gd库时  
+apk add libpng-dev libwebp-dev libjpeg-turbo-dev freetype-dev  
+php7.4后有变化  
+docker-php-ext-configure gd --with-webp=/usr/include/webp --with-jpeg=/usr/include --with-freetype=/usr/include/freetype2/  
+docker-php-ext-install gd  
