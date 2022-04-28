@@ -23,3 +23,12 @@ apk add libpng-dev libwebp-dev libjpeg-turbo-dev freetype-dev
 php7.4后有变化  
 docker-php-ext-configure gd --with-webp=/usr/include/webp --with-jpeg=/usr/include --with-freetype=/usr/include/freetype2/  
 docker-php-ext-install gd  
+
+git checkout app/Http/Controllers/PagesController.php
+
+php artisan make:middleware EnsureEmailIsVerified
+
+
+mkdir -p /usr/share/zoneinfo/Asia
+docker cp /usr/share/zoneinfo/Asia/Shanghai local-php-fpm:/usr/share/zoneinfo/Asia/Shanghai
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
