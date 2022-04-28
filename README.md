@@ -39,3 +39,8 @@ php artisan make:controller UsersController
 
 mkdir resources/views/users  
 touch resources/views/users/show.blade.php  
+touch resources/views/users/edit.blade.php  
+
+php artisan make:migration add_avatar_and_introduction_to_users_table --table=users  
+
+php artisan make:request UserRequest
