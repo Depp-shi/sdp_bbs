@@ -32,3 +32,10 @@ php artisan make:middleware EnsureEmailIsVerified
 mkdir -p /usr/share/zoneinfo/Asia
 docker cp /usr/share/zoneinfo/Asia/Shanghai local-php-fpm:/usr/share/zoneinfo/Asia/Shanghai
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+
+php artisan make:controller UsersController  
+
+
+mkdir resources/views/users  
+touch resources/views/users/show.blade.php  
