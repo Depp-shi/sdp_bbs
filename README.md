@@ -101,3 +101,4 @@ php artisan vendor:publish --provider="Laravel\Horizon\HorizonServiceProvider"
 php artisan horizon  
 http://www.sdpbbs.local/horizon  
 php artisan make:scaffold Reply --schema="topic_id:integer:unsigned:default(0):index,user_id:bigInteger:unsigned:default(0):index,content:text"  
+touch resources/views/topics/_reply_box.blade.php  
