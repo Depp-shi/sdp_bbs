@@ -105,4 +105,10 @@ touch resources/views/topics/_reply_box.blade.php
 php artisan notifications:table  
 php artisan make:migration add_notification_count_to_users_table --table=users  
 
-php artisan make:notification TopicReplied
+php artisan make:notification TopicReplied  
+Route::resource('notifications', 'NotificationsController', ['only' => ['index']]);  
+php artisan make:controller NotificationsController  
+mkdir resources/views/notifications  
+touch resources/views/notifications/index.blade.php  
+mkdir resources/views/notifications/types  
+touch resources/views/notifications/types/_topic_replied.blade.php  
