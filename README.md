@@ -80,3 +80,5 @@ touch resources/views/users/_topics.blade.php
 
 mkdir -p resources/editor/css  
 mkdir -p resources/editor/js  
+
+touch public/uploads/images/topics/.gitignore  
