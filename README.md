@@ -118,3 +118,7 @@ composer require "spatie/laravel-permission:~5.5"
 
 php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="migrations"  
 php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="config"  
+
+
+composer require "viacreative/sudo-su:~1.1"  
+php artisan vendor:publish --provider="VIACreative\SudoSu\ServiceProvider"  
