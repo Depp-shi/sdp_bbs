@@ -90,3 +90,5 @@ fetch("http://www.sdpbbs.local/topics", {"headers":{"content-type":"application/
 
 composer require "mews/purifier:~3.3"  
 php artisan vendor:publish --provider="Mews\Purifier\PurifierServiceProvider"  
+
+composer require "overtrue/pinyin:~4.0"  
