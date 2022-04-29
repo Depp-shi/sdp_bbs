@@ -74,3 +74,6 @@ php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"
 
 
 composer require "summerblue/laravel-active:9.*"  
+
+
+touch resources/views/users/_topics.blade.php  
