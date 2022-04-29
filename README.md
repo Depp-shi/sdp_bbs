@@ -48,3 +48,9 @@ php artisan make:request UserRequest
 
 composer require "intervention/image:^2.7"  
 php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"  
+php artisan make:policy UserPolicy  
+
+
+php artisan make:model Category -m  
+
+php artisan make:migration seed_categories_data  
