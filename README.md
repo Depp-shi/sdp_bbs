@@ -102,3 +102,7 @@ php artisan horizon
 http://www.sdpbbs.local/horizon  
 php artisan make:scaffold Reply --schema="topic_id:integer:unsigned:default(0):index,user_id:bigInteger:unsigned:default(0):index,content:text"  
 touch resources/views/topics/_reply_box.blade.php  
+php artisan notifications:table  
+php artisan make:migration add_notification_count_to_users_table --table=users  
+
+php artisan make:notification TopicReplied
