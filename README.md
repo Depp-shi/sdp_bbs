@@ -83,3 +83,10 @@ mkdir -p resources/editor/js
 
 touch public/uploads/images/topics/.gitignore  
 touch resources/sass/_topic_body.scss
+
+
+fetch("http://www.sdpbbs.local/topics", {"headers":{"content-type":"application/x-www-form-urlencoded","upgrade-insecure-requests":"1"},"body":"_token=y6Aam91YhaqDJehQAQfzQUyophK52Rx7iIglv49F&title=dangerous%20content+&category_id=2&body=%3Cscript%3Ealert%28%27%E5%AD%98%E5%9C%A8%20XSS%20%E5%AE%89%E5%85%A8%E5%A8%81%E8%83%81%EF%BC%81%27%29%3C%2Fscript%3E","method":"POST","mode":"cors"});
+
+
+composer require "mews/purifier:~3.3"  
+php artisan vendor:publish --provider="Mews\Purifier\PurifierServiceProvider"  
