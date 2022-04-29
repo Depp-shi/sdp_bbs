@@ -57,3 +57,7 @@ php artisan make:migration seed_categories_data
 
 
 composer require "summerblue/generator:9.*" --dev  
+
+
+git checkout .  
+git clean -f -d  
