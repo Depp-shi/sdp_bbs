@@ -67,3 +67,7 @@ php artisan make:scaffold Topic --schema="title:string:index,body:text,user_id:b
 
 touch resources/views/topics/_topic_list.blade.php  
 touch resources/views/topics/_sidebar.blade.php  
+
+composer require "barryvdh/laravel-debugbar:~3.6" --dev  
+
+php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"  
