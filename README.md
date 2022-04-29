@@ -82,3 +82,4 @@ mkdir -p resources/editor/css
 mkdir -p resources/editor/js  
 
 touch public/uploads/images/topics/.gitignore  
+touch resources/sass/_topic_body.scss
