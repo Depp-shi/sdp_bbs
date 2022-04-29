@@ -92,3 +92,9 @@ composer require "mews/purifier:~3.3"
 php artisan vendor:publish --provider="Mews\Purifier\PurifierServiceProvider"  
 
 composer require "overtrue/pinyin:~4.0"  
+composer require "predis/predis:~1.1"  
+php artisan make:job TranslateSlug  
+
+php artisan queue:listen
+composer require "laravel/horizon:~5.9"  
+php artisan vendor:publish --provider="Laravel\Horizon\HorizonServiceProvider"  
