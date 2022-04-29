@@ -140,3 +140,5 @@ touch config/administrator/categories.php
 
 touch config/administrator/topics.php  
 touch config/administrator/replies.php
+touch config/administrator/settings/site.php  
+touch resources/views/pages/permission_denied.blade.php  
