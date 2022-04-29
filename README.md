@@ -54,3 +54,6 @@ php artisan make:policy UserPolicy
 php artisan make:model Category -m  
 
 php artisan make:migration seed_categories_data  
+
+
+composer require "summerblue/generator:9.*" --dev  
