@@ -71,3 +71,6 @@ touch resources/views/topics/_sidebar.blade.php
 composer require "barryvdh/laravel-debugbar:~3.6" --dev  
 
 php artisan vendor:publish --provider="Barryvdh\Debugbar\ServiceProvider"  
+
+
+composer require "summerblue/laravel-active:9.*"  
