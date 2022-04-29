@@ -61,3 +61,9 @@ composer require "summerblue/generator:9.*" --dev
 
 git checkout .  
 git clean -f -d  
+
+
+php artisan make:scaffold Topic --schema="title:string:index,body:text,user_id:bigInteger:unsigned:index,category_id:integer:unsigned:index,reply_count:integer:unsigned:default(0),view_count:integer:unsigned:default(0),last_reply_user_id:integer:unsigned:default(0),order:integer:unsigned:default(0),excerpt:text:nullable,slug:string:nullable"  
+
+touch resources/views/topics/_topic_list.blade.php  
+touch resources/views/topics/_sidebar.blade.php  
