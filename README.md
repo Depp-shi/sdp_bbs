@@ -122,3 +122,9 @@ php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvid
 
 composer require "viacreative/sudo-su:~1.1"  
 php artisan vendor:publish --provider="VIACreative\SudoSu\ServiceProvider"  
+
+composer require "summerblue/administrator:9.*"  
+php artisan vendor:publish --provider="Frozennode\Administrator\AdministratorServiceProvider"  
+
+mkdir -p config/administrator/settings
+touch config/administrator/settings/.gitkeep
