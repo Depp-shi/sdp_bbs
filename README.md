@@ -77,3 +77,6 @@ composer require "summerblue/laravel-active:9.*"
 
 
 touch resources/views/users/_topics.blade.php  
+
+mkdir -p resources/editor/css  
+mkdir -p resources/editor/js  
