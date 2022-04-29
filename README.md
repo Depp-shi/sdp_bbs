@@ -126,5 +126,17 @@ php artisan vendor:publish --provider="VIACreative\SudoSu\ServiceProvider"
 composer require "summerblue/administrator:9.*"  
 php artisan vendor:publish --provider="Frozennode\Administrator\AdministratorServiceProvider"  
 
-mkdir -p config/administrator/settings
-touch config/administrator/settings/.gitkeep
+mkdir -p config/administrator/settings  
+touch config/administrator/settings/.gitkeep  
+touch config/administrator/users.php  
+touch config/administrator/roles.php  
+touch config/administrator/permissions.php  
+
+
+git add -A  
+git commit -m "管理员可以管理权限和角色"  
+
+touch config/administrator/categories.php  
+
+touch config/administrator/topics.php  
+touch config/administrator/replies.php

@@ -41,6 +41,13 @@ return array(
     'menu' => [
         '用户与权限' => [
             'users',
+            'roles',
+            'permissions',
+        ],
+        '内容管理' => [
+            'categories',
+            'topics',
+            'replies',
         ],
     ],
 
