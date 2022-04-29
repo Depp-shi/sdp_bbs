@@ -112,3 +112,9 @@ mkdir resources/views/notifications
 touch resources/views/notifications/index.blade.php  
 mkdir resources/views/notifications/types  
 touch resources/views/notifications/types/_topic_replied.blade.php  
+
+
+composer require "spatie/laravel-permission:~5.5"  
+
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="migrations"  
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="config"  
