@@ -1,3 +1,4 @@
+ssh-keygen -C '邮箱' -t rsa
 mkdir resources/views/layouts  
 touch resources/views/layouts/app.blade.php  
 touch resources/views/layouts/_header.blade.php  
